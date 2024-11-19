@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Syntax Wave's diverse range of services including business management systems, website and backend development, mobile app solutions, and comprehensive technology services." />
+    <title>Services - Syntax Wave</title>
+    <link rel="icon" href="final syntax wave.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        nav {
+            background-color: #002b36;
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav img {
+            height: 60px;
+        }
+        nav div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00c2d1;
+        }
+    
+        /* Hero Section */
+        .hero {
+            background-color: #ff4f6b;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+    
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            width: 45%;
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service h3 {
+            font-size: 2rem;
+            color: #ff4f6b;
+            margin-bottom: 10px;
+        }
+        .service p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+    
+        /* Call-to-Action Section */
+        .cta {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta a {
+            color: #00c2d1;
+            font-weight: bold;
+        }
+    
+        /* Footer */
+        footer {
+            background-color: #002b36;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .service {
+                width: 90%; /* Adjust card width for tablets */
+            }
+        }
+    
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+            }
+            nav img {
+                margin-bottom: 10px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 90%;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.5rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .service h3 {
+                font-size: 1.5rem;
+            }
+            .service p {
+                font-size: 1rem;
+            }
+        }
+    </style>    
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="final syntax wave.png" alt="Syntax Wave Logo">
+        <div>
+            <a href="/">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Our Services</h1>
+        <p>Innovative solutions to meet your business needs.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services">
+        <div class="service">
+            <h3>Business Management Systems</h3>
+            <p>We build comprehensive systems that help businesses streamline their operations, from workflow automation to data management and reporting. Our solutions are tailored to suit each company’s unique requirements, ensuring maximum efficiency.</p>
+        </div>
+        <div class="service">
+            <h3>Website & Backend Development</h3>
+            <p>At Syntax Wave, we specialize in creating robust, scalable, and visually appealing websites. Whether it’s an e-commerce platform, a dynamic content site, or a custom backend solution, our team delivers secure and user-friendly systems that drive business success.</p>
+        </div>
+        <div class="service">
+            <h3>Mobile App Development</h3>
+            <p>We design and develop high-performance mobile applications for both iOS and Android. Our apps are intuitive, secure, and optimized for performance, ensuring an excellent user experience that keeps customers engaged.</p>
+        </div>
+        <div class="service">
+            <h3>Comprehensive Technology Solutions</h3>
+            <p>From cloud integration and automation to custom software solutions, Syntax Wave offers a full suite of technology services. We work closely with businesses to identify their needs and provide solutions that align with their goals, using cutting-edge technology.</p>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="cta">
+        <p>Have a project in mind? <a href="Contact.html">Contact us today</a> to discuss how we can help your business grow with innovative technology solutions.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Syntax Wave. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
