@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Syntax Wave, a technology company delivering tailored solutions in business management systems, website development, mobile app creation, and general tech services." />
+    <title>About Us - Syntax Wave</title>
+    <link rel="icon" href="final syntax wave.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        nav {
+            background-color: #002b36;
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav img {
+            height: 60px;
+        }
+        nav div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00c2d1;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #00c2d1;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #f0ffff;
+        }
+
+        /* Wave Effect */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            background-image: url('final syntax wave.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            height:80%;
+            opacity: 0.05;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .about-us h2 {
+            font-size: 2.5rem;
+            color: #ff4f6b;
+            margin-bottom: 20px;
+        }
+        .about-us p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Core Values Section */
+        .core-values {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+        }
+        .value {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .value h3 {
+            font-size: 1.8rem;
+            color: #ff4f6b;
+            margin-bottom: 10px;
+        }
+        .value p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team {
+            background-color: #fff;
+            padding: 50px 20px;
+        }
+        .team h2 {
+            font-size: 2.5rem;
+            color: #ff4f6b;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .member {
+            text-align: center;
+            width: 30%;
+            margin-bottom: 40px;
+        }
+        .member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .member h4 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #333;
+        }
+        .member p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Call-to-Action */
+        .cta {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta a {
+            color: #00c2d1;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #002b36;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .about-us h2, .team h2 {
+                font-size: 2.2rem;
+            }
+            .core-values, .team-members {
+                flex-direction: column;
+                align-items: center;
+            }
+            .value, .member {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+            }
+            nav img {
+                margin-bottom: 10px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .about-us h2, .team h2 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 70px 20px;
+            }
+            .hero::before {
+                top: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.5rem;
+            }
+            .hero {
+                padding: 60px 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .about-us p {
+                font-size: 1rem;
+            }
+            .member img {
+                width: 120px;
+                height: 120px;
+            }
+            .member h4 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="final syntax wave.png" alt="Syntax Wave Logo">
+        <div>
+            <a href="/">Home</a>
+            <a href="#">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>About Syntax Wave</h1>
+        <p>Innovating the Future of Software Solutions</p>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <h2>Our Story</h2>
+        <p>
+            Syntax Wave was founded with a simple idea in mind: to deliver cutting-edge software solutions that empower businesses to thrive in the digital era. With a passion for innovation and a drive to create reliable, scalable, and efficient software, we have grown from a small team of tech enthusiasts to a full-scale company delivering projects worldwide.
+        </p>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+        <div class="value">
+            <h3>Innovation</h3>
+            <p>We are constantly exploring new technologies to stay at the forefront of the software industry.</p>
+        </div>
+        <div class="value">
+            <h3>Integrity</h3>
+            <p>Our clients trust us because we deliver what we promise, with transparency and commitment.</p>
+        </div>
+        <div class="value">
+            <h3>Excellence</h3>
+            <p>We strive for perfection in every project, ensuring the highest level of quality in everything we do.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Meet the Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="IMG_9102.jpg" alt="Team Member 1">
+                <h4>Yousef Eldosoky</h4>
+                <p>CEO & Backend Developer</p>
+            </div>
+            <div class="member">
+                <img src="Eltabey.enc" alt="Team Member 2">
+                <h4>Abd Elrahman Eltabey</h4>
+                <p>CEO & Data Scientist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <div class="cta">
+        <p>Ready to learn more about Syntax Wave? <a href="Contact.html">Contact us today</a> to start your next project!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Syntax Wave. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
